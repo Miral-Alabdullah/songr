@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+</head>
+<body>
+    <h1>This page contains Albums : </h1>
+    <div th:each="AlbumModel: ${albums}">
+        <p>Title : <span th:text="${AlbumModel.title}"></span></p>
+        <p>Artist : <span th:text="${AlbumModel.artist}"></span></p>
+        <p>Number Of Songs : <span th:text="${AlbumModel.songCount}"></span></p>
+    </div>
+</body>
+</html>
