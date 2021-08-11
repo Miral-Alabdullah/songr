@@ -1,9 +1,9 @@
-package model;
+package com.songr.songr.Model;
 
-public class CapitalizedModel {
+public class Capitalized {
     String word = "";
 
-    public CapitalizedModel(String word) {
+    public Capitalized(String word) {
         this.word = word;
     }
 

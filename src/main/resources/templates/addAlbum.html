@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="albums.css">
+    <link rel="stylesheet" href="header.css">
     <meta charset="UTF-8">
     <title>Albums</title>
 </head>
@@ -20,13 +20,8 @@
     </nav>
 </header>
 <body>
-    <h2>My World</h2>
-    <div th:each="albums: ${albums}">
-        <img th:src="${albums.imageUrl}">
-        <p>Title : <span th:text="${albums.title}"></span></p>
-        <p>Artist : <span th:text="${albums.artist}"></span></p>
-        <p>Number Of Songs : <span th:text="${albums.songCount}"></span></p>
-        <p>Length of the album : <span th:text="${albums.length}"></span></p>
-    </div>
+<form>
+
+</form>
 </body>
 </html>
