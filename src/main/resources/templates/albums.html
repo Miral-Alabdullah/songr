@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="albums.css">
     <meta charset="UTF-8">
     <title>Albums</title>
 </head>
+<header>
+    <h1>Albums</h1>
+    <nav>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Capitalized</li></a>
+            <a href=""><li>Album</li></a>
+        </ul>
+    </nav>
+</header>
 <body>
     <h1>This page contains Albums : </h1>
-    <div th:each="AlbumModel: ${albums}">
-        <p>Title : <span th:text="${AlbumModel.title}"></span></p>
-        <p>Artist : <span th:text="${AlbumModel.artist}"></span></p>
-        <p>Number Of Songs : <span th:text="${AlbumModel.songCount}"></span></p>
+    <div th:each="albums: ${albums}">
+        <img th:src="${albums.imageUrl}">
+        <p>Title : <span th:text="${albums.title}"></span></p>
+        <p>Artist : <span th:text="${albums.artist}"></span></p>
+        <p>Number Of Songs : <span th:text="${albums.songCount}"></span></p>
+        <p>Length of the album : <span th:text="${albums.length}"></span></p>
     </div>
 </body>
 </html>

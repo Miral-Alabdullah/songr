@@ -1,13 +1,13 @@
-package model;
+package com.songr.songr.Model;
 
-public class AlbumModel {
+public class Album {
     private String title;
     private String artist;
     private int songCount;
     private double length;
     private String imageUrl;
 
-    public AlbumModel(String title, String artist, int songCount, double length, String imageUrl) {
+    public Album(String title, String artist, int songCount, double length, String imageUrl) {
         this.title = title;
         this.artist = artist;
         this.songCount = songCount;
