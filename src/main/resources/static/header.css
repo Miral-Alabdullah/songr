@@ -1,6 +1,6 @@
 body {
 line-height: 1;
-background-color: #F5E8C7;
+background-color: maroon;
 }
 
 header{
@@ -11,14 +11,20 @@ padding: 0;
 }
 
 header h1 {
-color: #6F4C5B;
+color: darkgoldenrod;
 font-size: 100px;
 font-family:'Bebas Neue', cursive;
 padding: 20px 20px 20px 30px;
 }
 
+#href:hover{
+text-decoration: none;
+text-shadow: 1px 1px 1px black;
+}
+
 nav {
 padding: 5px;
+align-items: center;
 }
 
 nav ul {
@@ -29,7 +35,7 @@ padding-top: 25px;
 nav ul li {
 display: inline;
 padding-top: 50px;
-color: #6F4C5B;
+color: darkgoldenrod;
 padding-left: 4px;
 font-family: 'Bebas Neue', cursive;
 font-size: 20px;
@@ -43,4 +49,5 @@ padding-right: 15px;
 nav ul a:hover {
 padding: 10px;
 background-color: #DEBA9D;
+text-decoration: none;
 }
