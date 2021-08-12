@@ -7,12 +7,14 @@ public class Album {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @OneToMany(mappedBy = "song")
     private int Id;
     private String title;
     private String artist;
     private int songCount;
     private double length;
     private String imageUrl;
+    private Song song;
 
     public Album(){
 

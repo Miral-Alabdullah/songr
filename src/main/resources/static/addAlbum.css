@@ -1,7 +1,11 @@
 #form{
-width: 70%;
+width: 50%;
+margin-left: 25%;
+margin-top: 5%;
 }
 
 #parent-container{
-background-image = url("copy_747241530.png");
+background-image: url("https://i.ibb.co/yPR2txM/copy-747241530.png");
+background-size: contain;
+background-repeat: space;
 }

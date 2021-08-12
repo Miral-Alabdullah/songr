@@ -29,4 +29,5 @@ public class AlbumController {
         model.addAttribute("albums", albums);
         return "albums.html";
     }
+
 }
