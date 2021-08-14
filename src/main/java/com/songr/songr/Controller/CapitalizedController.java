@@ -1,18 +1,16 @@
 package com.songr.songr.Controller;
 
-import com.songr.songr.Model.Capitalized;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class CapitalizedController {
 
     @GetMapping("/capitalize/{word}")
-    public String capitalizeTheRoute(Model model, @RequestParam(value = "word") String word){
-        Capitalized capitalizedModel = new Capitalized(word);
-        model.addAttribute("word", capitalizedModel);
+    public String capitalizeTheRoute(@PathVariable String word, Model model){
+        model.addAttribute("word", word.toUpperCase());
         return "home.html";
     }
 

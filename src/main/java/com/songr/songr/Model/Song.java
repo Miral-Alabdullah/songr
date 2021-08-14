@@ -14,12 +14,12 @@ public class Song {
     private double length;
     private int trackNumber;
     @ManyToOne
-    private List<Album> album;
+    private Album album;
 
     public Song() {
     }
 
-    public Song(String title, double length, int trackNumber, List<Album> album) {
+    public Song(String title, double length, int trackNumber, Album album) {
         this.title = title;
         this.length = length;
         this.trackNumber = trackNumber;
@@ -58,11 +58,11 @@ public class Song {
         this.trackNumber = trackNumber;
     }
 
-    public List<Album> getAlbum() {
+    public Album getAlbum() {
         return album;
     }
 
-    public void setAlbum(List<Album> album) {
+    public void setAlbum(Album album) {
         this.album = album;
     }
 }
