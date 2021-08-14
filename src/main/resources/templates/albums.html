@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -21,7 +22,35 @@
     </nav>
 </header>
 <body>
-    <h2>My World</h2>
+<div id="big-container">
+    <div id="form-container">
+        <fieldset title="Add Your Favorite Albums">
+        <form id="form" th:action="@{/addAlbum}" method="post">
+            <div class="form-group">
+                <label for="exampleInputTitle">Album Title</label>
+                <input type="text" name="title" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Album Title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputArtist">Album Artist</label>
+                <input type="text" name="artist" class="form-control" id="exampleInputArtist" aria-describedby="artistHelp" placeholder="Album Artist">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputSongCount">Number of Songs</label>
+                <input type="number" name="songCount" class="form-control" id="exampleInputSongCount" aria-describedby="songHelp" placeholder="Number of Song">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputLength">Album Length</label>
+                <input type="number" name="length" class="form-control" id="exampleInputLength" aria-describedby="lengthHelp" placeholder="Length of The Album">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Image URL</label>
+                <input type="text" name="imageUrl" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </fieldset>
+    </div>
+    <div id="albums-container">
     <div th:each="albums: ${albums}">
         <img th:src="${albums.imageUrl}">
         <p>Title : <span th:text="${albums.title}"></span></p>
@@ -29,5 +58,7 @@
         <p>Number Of Songs : <span th:text="${albums.songCount}"></span></p>
         <p>Length of the album : <span th:text="${albums.length}"></span></p>
     </div>
+    </div>
+</div>
 </body>
 </html>

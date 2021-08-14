@@ -26,3 +26,15 @@
 
 <br>
 
+3- A Form that allows the user to add a new album with the saame given information. 
+
+
+
+```
+spring.datasource.platform=postgres
+spring.datasource.url=jdbc:postgresql://localhost:5432/albums
+spring.datasource.username=miral
+spring.datasource.password=0000
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.initialization-mode=always
+```

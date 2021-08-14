@@ -1,0 +1,71 @@
+#big-container{
+display: grid;
+grid-template-columns: auto auto;
+padding: 0;
+}
+#form{
+width: 60%;
+background-color: grey;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 1px 5px 2px black;
+background-image: url("https://i.pinimg.com/originals/02/71/01/0271018bb59d66c7339694bca02195b8.jpg");
+background-size: cover;
+margin-left: 20%;
+}
+label{
+display: inline-block;
+margin-bottom: .5rem;
+color: antiquewhite;
+}
+.form-control{
+display: block;
+width: 100%;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: blue;
+background-color: unset;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, input {
+    overflow: visible;
+    background-color: transparent;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: unset;
+    border-color: hsl;
+    width: 100%;
+    text-shadow: 1px 1px 1px black;
+}
+#form-container{
+background-size: contain;
+background-repeat: space;
+margin-left: 25%;
+}
+
+#albums-container{
+margin-left: 25%;
+}
