@@ -67,5 +67,31 @@ margin-left: 25%;
 }
 
 #albums-container{
-margin-left: 25%;
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
+margin: 5%;
+}
+
+.card {
+position: relative;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: gray;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+height: 70%;
+padding: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 100%;
 }

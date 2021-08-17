@@ -26,15 +26,50 @@
 
 <br>
 
-3- A Form that allows the user to add a new album with the saame given information. 
+3- A Form that allows the user to add a new album with the same given information. 
+
+4- A Form that allows the user to add a new song belongs to one of the added albums.
 
 
 
-```
-spring.datasource.platform=postgres
-spring.datasource.url=jdbc:postgresql://localhost:5432/albums
-spring.datasource.username=miral
-spring.datasource.password=0000
-spring.jpa.hibernate.ddl-auto=update
-spring.datasource.initialization-mode=always
-```
+To make this application works => 
+
+- application.properties file : 
+
+![!](./application.properties.png)
+
+
+<br>
+
+- build.gradle file : 
+
+![!](./build.gradle.png)
+
+
+
+The database, tables and firlds => The relation between the album table and song is one-to-many.
+
+<br>
+
+![!](./albumsTable.png)
+
+![!](./songsTable.png)
+
+
+## Endpoints : 
+
+- **("/")** => Home page. 
+
+- **(/capitalize/{word})** => Convert the given word to its uppercase. 
+
+- **(/albums)** => Shows all of the albums.
+
+- **(/addAlbum)** => Allows the user to add a new album.
+
+- **(/songs)** => Shows all of the songs.
+
+- **(/addSong)** => Allows the user to add a new song.
+
+- **(/song/{id})** => Shows the song based on its id that stoed in the DB.
+
+- **(/album/{id})** => Shows the album based on its id that stoed in the DB.

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="albums.css">
     <meta charset="UTF-8">
-    <title>Albums</title>
+    <title>Songs</title>
 </head>
 <header>
     <a href="" id="href"><h1>Albums</h1></a>
@@ -26,14 +26,15 @@
 <body>
 <div id="big-container">
     <div id="albums-container">
-        <div th:each="albums: ${albums}">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" th:src="${albums.imageUrl}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" th:text="${albums.title}"></h5>
-                <p class="card-text" th:text="${albums.artist}"></p>
-                <p class="card-text" th:text="${albums.songCount}"></p>
-                <p class="card-text" th:text="${albums.length}"></p>
+        <div th:each="songs: ${songs}">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" th:src="${songs.album.imageUrl}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${songs.title}"></h5>
+                    <p class="card-text" th:text="${songs.length}"></p>
+                    <p class="card-text" th:text="${songs.trackNumber}"></p>
+                    <p class="card-text" th:text="${songs.album.title}"></p>
+                </div>
             </div>
         </div>
     </div>

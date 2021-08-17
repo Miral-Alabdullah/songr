@@ -17,9 +17,8 @@ public class SongrApplication {
 	}
 
 	@GetMapping("/")
-	@ResponseBody
 	public static String renderTheGreeting(){
-		return "Hello World!";
+		return "home.html";
 	}
 
 

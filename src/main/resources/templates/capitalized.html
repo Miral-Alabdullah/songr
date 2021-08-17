@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="albums.css">
-    <meta charset="UTF-8">
-    <title>Albums</title>
+    <title>Capitalized Words</title>
 </head>
+<body>
 <header>
     <a href="" id="href"><h1>Albums</h1></a>
     <nav>
@@ -23,20 +23,15 @@
         </ul>
     </nav>
 </header>
-<body>
-<div id="big-container">
-    <div id="albums-container">
-        <div th:each="albums: ${albums}">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" th:src="${albums.imageUrl}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" th:text="${albums.title}"></h5>
-                <p class="card-text" th:text="${albums.artist}"></p>
-                <p class="card-text" th:text="${albums.songCount}"></p>
-                <p class="card-text" th:text="${albums.length}"></p>
-            </div>
-        </div>
-    </div>
-</div>
+
+<main>
+    <h1>This application contains Albums and songs</h1>
+    <h2 th:text="${word}"></h2>
+</main>
+
+<footer>
+
+</footer>
+
 </body>
 </html>
