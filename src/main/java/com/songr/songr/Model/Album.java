@@ -21,6 +21,10 @@ public class Album {
 
     }
 
+    public Album(List<Song> song) {
+        this.song = song;
+    }
+
     public Album(String title, String artist, int songCount, double length, String imageUrl) {
         this();
         this.title = title;

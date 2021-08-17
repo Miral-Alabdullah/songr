@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="albums.css">
     <meta charset="UTF-8">
-    <title>Add Albums</title>
+    <title>Add Song</title>
 </head>
 <header>
     <a href=""><h1>Albums</h1></a>
@@ -27,27 +27,24 @@
 <div id="parent-container">
     <div id="form-container">
         <fieldset title="Add Your Favorite Albums">
-            <form id="form" th:action="@{/addAlbum}" method="post">
+            <form id="form" th:action="@{/addSong}" method="post">
                 <div class="form-group">
-                    <label for="exampleInputTitle">Album Title</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Album Title">
+                    <label for="exampleInputTitle">Song Title</label>
+                    <input type="text" name="title" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Song Title">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputArtist">Album Artist</label>
-                    <input type="text" name="artist" class="form-control" id="exampleInputArtist" aria-describedby="artistHelp" placeholder="Album Artist">
+                    <label for="exampleInputArtist">Song Length</label>
+                    <input type="text" name="length" class="form-control" id="exampleInputArtist" aria-describedby="artistHelp" placeholder="Song Length">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputSongCount">Number of Songs</label>
-                    <input type="number" name="songCount" class="form-control" id="exampleInputSongCount" aria-describedby="songHelp" placeholder="Number of Song">
+                    <label for="exampleInputSongCount">Track Number</label>
+                    <input type="number" name="trackNumber" class="form-control" id="exampleInputSongCount" aria-describedby="songHelp" placeholder="Track Number">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputLength">Album Length</label>
-                    <input type="number" name="length" class="form-control" id="exampleInputLength" aria-describedby="lengthHelp" placeholder="Length of The Album">
+                    <label for="exampleInputSongCount">Album</label>
+                    <input type="text" name="album" class="form-control" id="exampleInputAlbumId" aria-describedby="songHelp" placeholder="Album">
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Image URL</label>
-                    <input type="text" name="imageUrl" class="form-control-file" id="exampleFormControlFile1">
-                </div>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </fieldset>

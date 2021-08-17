@@ -1,11 +1,38 @@
 #form{
-width: 50%;
-margin-left: 25%;
-margin-top: 5%;
+    width: 45%;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 5px 2px black;
+    background-image: url("https://i.pinimg.com/originals/02/71/01/0271018bb59d66c7339694bca02195b8.jpg");
+    background-size: cover;
+    margin-left: 20%;
+    background-position: bottom;
+}
 }
 
 #parent-container{
 background-image: url("https://i.ibb.co/yPR2txM/copy-747241530.png");
 background-size: contain;
 background-repeat: space;
+}
+
+.form-control-file, .form-control-range {
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    background-color: unset;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
